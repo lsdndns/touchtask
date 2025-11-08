@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>haptic_dimensions</title>
-    <script src="https://unpkg.com/jspsych@8.2.2"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.1.0"></script>
-    <link href="https://unpkg.com/jspsych@8.2.2/css/jspsych.css" rel="stylesheet" type="text/css" />
-    <script src="experiment.js"></script>
-  </head>
-  <body></body>
-  <script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Circle Color Experiment</title>
+
+  <!-- jsPsych 8.2.2 library (ES module) -->
+  <script type="module">
+    import jsPsych from "https://unpkg.com/jspsych@8.2.2/dist/jspsych.js";
+    import htmlKeyboardResponse from "https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.0.3/dist/index.js";
+    import imageKeyboardResponse from "https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.0.3/dist/index.js";
+    import preload from "https://unpkg.com/@jspsych/plugin-preload@1.0.3/dist/index.js";
+
+    window.jsPsych = jsPsych;
+    window.jsPsychHtmlKeyboardResponse = htmlKeyboardResponse;
+    window.jsPsychImageKeyboardResponse = imageKeyboardResponse;
+    window.jsPsychPreload = preload;
+
+    // Load your experiment code after setting globals
+    import "./experiment.js";
   </script>
+
+  <!-- jsPsych default CSS -->
+  <link href="https://unpkg.com/jspsych@8.2.2/dist/css/jspsych.css" rel="stylesheet">
+</head>
+<body></body>
 </html>
