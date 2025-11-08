@@ -1,6 +1,5 @@
 // === CONFIGURATION ===
-const SECRET_TOKEN = "a9F2sJp7KxGq91B"; // must match your Google Apps Script
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyF4C73Pm5NNJDs1plH3G7iDl1ueVBXWrA-Wi_nBSI-8jk-J4vHJFKOXp85wdSawHI6Ug/exec"; // replace with your Apps Script Web App URL
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxyKwHBlKjGKdlniuFm-T4ganKj790LopgE1igc_sX_rXqiIbR4T6k33YrnoBhuoZ7Xtg/exec"; // replace with your Apps Script Web App URL
 // =====================
 
 // 1️⃣ Define your trials
@@ -40,7 +39,6 @@ const timeline = [instructions, ...trialTimeline];
 jsPsych.run(timeline).then(() => {
   // Prepare data payload for Google Sheets
   const payload = {
-    token: SECRET_TOKEN,
     data: jsPsych.data.get().values()
   };
 
@@ -54,3 +52,4 @@ jsPsych.run(timeline).then(() => {
   // Thank you message
   document.body.innerHTML = "<h2>Thank you for participating!</h2>";
 });
+
