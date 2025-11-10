@@ -252,7 +252,7 @@ def start_experiment():
 def instruction_task1():
     messagebox.showinfo("Instructions 1",
         "Task 1\n\n"
-        "At each trial, three images appear. Click on the image that is most different from the other two.\n"
+        "At each trial, three images of textures appear. Click on the texture that is most different from the other two.\n"
         "Before the main task, you will complete five training trials\n\n"
         "Press OK to start the training.")
     global practice_index
