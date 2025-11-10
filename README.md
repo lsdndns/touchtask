@@ -1,3 +1,6 @@
-touch task 
+# Welcome
 
-currently trying to make this work fhezbfjhbfz
+Two tasks in one file! 
+Output one csv file with the data. 
+
+Uses PIL, not in python by default 
