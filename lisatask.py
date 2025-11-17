@@ -35,7 +35,9 @@ descriptor_index = 0
 trial_start_time = None
 
 # one output file
-filename = f"experiment_data_{random.randint(1000,9999)}.csv"
+# one output file
+filename = BASE_DIR / f"experiment_data_{random.randint(1000,9999)}.csv"
+#filename = f"experiment_data_{random.randint(1000,9999)}.csv"
 
 # -------------------------------
 # Tkinter setup
