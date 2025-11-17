@@ -6,11 +6,14 @@ import os
 import itertools
 import random
 import time
+from pathlib import Path
 
 # -------------------------------
 # Experiment setup
 # -------------------------------
-stimuli = [f"img/img{i}.png" for i in range(1, 11)] # to update 
+BASE_DIR = Path(_file_).parent
+stimuli = [BASE_DIR / "img" / f"img{i}.png" for i in range(1, 11)] # to update
+# stimuli = [f"img/img{i}.png" for i in range(1, 11)] # to update 
 all_combinations = list(itertools.combinations(stimuli, 3))
 random.shuffle(all_combinations)
 triple_trials = all_combinations*2
