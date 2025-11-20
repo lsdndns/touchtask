@@ -122,7 +122,7 @@ def show_block_screen(block_num):
     if block_num % 2 == 0 and block_num != 0:
         messagebox.showinfo("Take a break", "Take a couple of minutes to rest if needed.\nPress OK when you are ready to continue.")
 
-    messagebox.showinfo("New Block", f"Press Ok to start Block {block_num + 1}.\n")
+    messagebox.showinfo("New Block", f"Press Ok to start Block {block_num + 1}/12.\n")
     show_trial(current_trial_in_block)
 
 
